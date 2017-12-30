@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/">
+    <title>Canmphor-Tree</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.6/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+
+    <script src="node_modules/jquery/dist/jquery-2.1.1.min.js"></script>
+    <script src="resources/js/semantic.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" class="ui" href="resources/css/semantic.css" />
+    <link rel="stylesheet" type="text/css" class="ui" href="resources/css/main.css" />
+
+    <script>
+      System.config({
+        packages: {
+          build: {
+            format: 'register',
+            defaultExtention: 'js'
+          }
+        }
+      });
+      System.import('build/main')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
+<body>
+   <my-app>Loading...</my-app>
+</body>
+</html>
